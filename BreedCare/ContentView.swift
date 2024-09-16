@@ -27,7 +27,7 @@ struct Measurement: Decodable {
 }
 
 struct ImageInfo: Decodable {
-    var url: String
+    var url: String?
 }
 
 // ViewModel to fetch data from the Dog API
@@ -43,7 +43,7 @@ class DogBreedViewModel: ObservableObject {
         guard let url = URL(string: "https://api.thedogapi.com/v1/breeds") else { return }
         
         var request = URLRequest(url: url)
-        request.addValue("YOUR_API_KEY", forHTTPHeaderField: "live_UhDHiCXZJC2dLTdYdtZBE5Td4FeTGV2SwhKEOUQQy7BVMNsgdFIgw1OwDGUkFsIE") // Replace with your actual API key
+        request.addValue("live_UhDHiCXZJC2dLTdYdtZBE5Td4FeTGV2SwhKEOUQQy7BVMNsgdFIgw1OwDGUkFsIE", forHTTPHeaderField: "x-api-key")
         
         URLSession.shared.dataTaskPublisher(for: request)
             .map { result -> Data in
@@ -69,8 +69,6 @@ class DogBreedViewModel: ObservableObject {
         }
 }
 
-import SwiftUI
-
 struct ContentView: View {
     @StateObject var viewModel = DogBreedViewModel()
     @State private var searchText: String = ""
@@ -95,13 +93,15 @@ struct ContentView: View {
                             AsyncImage(url: url) { image in
                                 image
                                     .resizable()
-                                    .scaledToFit()
+                                    .scaledToFill()  // Makes sure the image fills the circle
                                     .frame(width: 50, height: 50)
-                                    .clipShape(Circle())
+                                    .clipShape(Circle())  // Clips image into a circle
                             } placeholder: {
                                 ProgressView()
+                                    .frame(width: 50, height: 50)
                             }
                         } else {
+                            // Fallback image for breeds without an image
                             Image(systemName: "pawprint.circle.fill")
                                 .resizable()
                                 .frame(width: 50, height: 50)
