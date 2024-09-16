@@ -13,6 +13,7 @@
 		74A596842C982A7000AE6342 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596832C982A7000AE6342 /* DogDetailView.swift */; };
 		74A596862C982A8D00AE6342 /* DogTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596852C982A8D00AE6342 /* DogTipsView.swift */; };
 		74A596882C982A9B00AE6342 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596872C982A9B00AE6342 /* MainView.swift */; };
+		74A5968A2C98416100AE6342 /* CareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596892C98416100AE6342 /* CareData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		74A596832C982A7000AE6342 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
 		74A596852C982A8D00AE6342 /* DogTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTipsView.swift; sourceTree = "<group>"; };
 		74A596872C982A9B00AE6342 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		74A596892C98416100AE6342 /* CareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				74A596832C982A7000AE6342 /* DogDetailView.swift */,
+				74A596892C98416100AE6342 /* CareData.swift */,
 				74A596872C982A9B00AE6342 /* MainView.swift */,
 				74A596852C982A8D00AE6342 /* DogTipsView.swift */,
 				74A596772C9829E300AE6342 /* ContentView.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A5968A2C98416100AE6342 /* CareData.swift in Sources */,
 				74A596782C9829E300AE6342 /* ContentView.swift in Sources */,
 				74A596862C982A8D00AE6342 /* DogTipsView.swift in Sources */,
 				74A596842C982A7000AE6342 /* DogDetailView.swift in Sources */,

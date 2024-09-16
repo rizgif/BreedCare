@@ -30,6 +30,7 @@ struct ImageInfo: Decodable {
     var url: String?
 }
 
+
 // ViewModel to fetch data from the Dog API
 class DogBreedViewModel: ObservableObject {
     @Published var dogBreeds: [DogBreed] = []
