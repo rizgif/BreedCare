@@ -22,9 +22,16 @@ struct MainView: View {
                     Image(systemName: "lightbulb")
                     Text("Tips")
                 }
+            
+            DogNamesView() // New Tab for Dog Names
+                .tabItem {
+                    Image(systemName: "pencil")
+                    Text("Dog Names")
+                }
         }
     }
 }
+
 
 @main
 struct DogInfoApp: App {

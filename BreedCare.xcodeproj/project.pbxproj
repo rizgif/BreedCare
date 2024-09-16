@@ -14,6 +14,8 @@
 		74A596862C982A8D00AE6342 /* DogTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596852C982A8D00AE6342 /* DogTipsView.swift */; };
 		74A596882C982A9B00AE6342 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596872C982A9B00AE6342 /* MainView.swift */; };
 		74A5968A2C98416100AE6342 /* CareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596892C98416100AE6342 /* CareData.swift */; };
+		74A5968E2C98492700AE6342 /* DogNamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5968D2C98492700AE6342 /* DogNamesView.swift */; };
+		74A596902C98495D00AE6342 /* DogNamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5968F2C98495D00AE6342 /* DogNamesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		74A596852C982A8D00AE6342 /* DogTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTipsView.swift; sourceTree = "<group>"; };
 		74A596872C982A9B00AE6342 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		74A596892C98416100AE6342 /* CareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareData.swift; sourceTree = "<group>"; };
+		74A5968D2C98492700AE6342 /* DogNamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNamesView.swift; sourceTree = "<group>"; };
+		74A5968F2C98495D00AE6342 /* DogNamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNamesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 		74A596692C9829E300AE6342 = {
 			isa = PBXGroup;
 			children = (
+				74A5968F2C98495D00AE6342 /* DogNamesData.swift */,
 				74A596742C9829E300AE6342 /* BreedCare */,
 				74A596732C9829E300AE6342 /* Products */,
 			);
@@ -60,6 +65,7 @@
 				74A596832C982A7000AE6342 /* DogDetailView.swift */,
 				74A596892C98416100AE6342 /* CareData.swift */,
 				74A596872C982A9B00AE6342 /* MainView.swift */,
+				74A5968D2C98492700AE6342 /* DogNamesView.swift */,
 				74A596852C982A8D00AE6342 /* DogTipsView.swift */,
 				74A596772C9829E300AE6342 /* ContentView.swift */,
 				74A596792C9829E500AE6342 /* Assets.xcassets */,
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A596902C98495D00AE6342 /* DogNamesData.swift in Sources */,
+				74A5968E2C98492700AE6342 /* DogNamesView.swift in Sources */,
 				74A5968A2C98416100AE6342 /* CareData.swift in Sources */,
 				74A596782C9829E300AE6342 /* ContentView.swift in Sources */,
 				74A596862C982A8D00AE6342 /* DogTipsView.swift in Sources */,
