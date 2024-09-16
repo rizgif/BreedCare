@@ -14,23 +14,24 @@ struct MainView: View {
             ContentView()
                 .tabItem {
                     Image(systemName: "list.bullet")
-                    Text("Breeds")
+                    Text("Breed Info")
                 }
             
-            DogTipsView()
+            DogJournalView()
                 .tabItem {
-                    Image(systemName: "lightbulb")
-                    Text("Tips")
+                    Image(systemName: "book")
+                    Text("Breed Journal")
                 }
             
             DogNamesView() // New Tab for Dog Names
                 .tabItem {
                     Image(systemName: "pencil")
-                    Text("Dog Names")
+                    Text("Breed Names")
                 }
         }
     }
 }
+
 
 
 @main
