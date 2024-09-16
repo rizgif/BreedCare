@@ -30,4 +30,3 @@ class JournalViewModel: ObservableObject {
         entries.removeAll { $0.id == entry.id }
     }
 }
-

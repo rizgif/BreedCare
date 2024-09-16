@@ -18,6 +18,8 @@
 		74A596902C98495D00AE6342 /* DogNamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5968F2C98495D00AE6342 /* DogNamesData.swift */; };
 		74A596972C984F5000AE6342 /* DogJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596962C984F5000AE6342 /* DogJournalView.swift */; };
 		74A596992C984FFF00AE6342 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A596982C984FFF00AE6342 /* JournalViewModel.swift */; };
+		74A5969B2C98507600AE6342 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5969A2C98507600AE6342 /* JournalEntry.swift */; };
+		74A5969D2C9850D100AE6342 /* AddEditEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5969C2C9850D100AE6342 /* AddEditEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		74A5968F2C98495D00AE6342 /* DogNamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNamesData.swift; sourceTree = "<group>"; };
 		74A596962C984F5000AE6342 /* DogJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogJournalView.swift; sourceTree = "<group>"; };
 		74A596982C984FFF00AE6342 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
+		74A5969A2C98507600AE6342 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		74A5969C2C9850D100AE6342 /* AddEditEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +71,12 @@
 			children = (
 				74A596832C982A7000AE6342 /* DogDetailView.swift */,
 				74A596892C98416100AE6342 /* CareData.swift */,
+				74A5969C2C9850D100AE6342 /* AddEditEntryView.swift */,
 				74A596872C982A9B00AE6342 /* MainView.swift */,
 				74A596962C984F5000AE6342 /* DogJournalView.swift */,
 				74A596982C984FFF00AE6342 /* JournalViewModel.swift */,
 				74A5968D2C98492700AE6342 /* DogNamesView.swift */,
+				74A5969A2C98507600AE6342 /* JournalEntry.swift */,
 				74A5968F2C98495D00AE6342 /* DogNamesData.swift */,
 				74A596852C982A8D00AE6342 /* DogTipsView.swift */,
 				74A596772C9829E300AE6342 /* ContentView.swift */,
@@ -160,9 +166,11 @@
 			files = (
 				74A596992C984FFF00AE6342 /* JournalViewModel.swift in Sources */,
 				74A596902C98495D00AE6342 /* DogNamesData.swift in Sources */,
+				74A5969B2C98507600AE6342 /* JournalEntry.swift in Sources */,
 				74A5968E2C98492700AE6342 /* DogNamesView.swift in Sources */,
 				74A5968A2C98416100AE6342 /* CareData.swift in Sources */,
 				74A596782C9829E300AE6342 /* ContentView.swift in Sources */,
+				74A5969D2C9850D100AE6342 /* AddEditEntryView.swift in Sources */,
 				74A596862C982A8D00AE6342 /* DogTipsView.swift in Sources */,
 				74A596842C982A7000AE6342 /* DogDetailView.swift in Sources */,
 				74A596882C982A9B00AE6342 /* MainView.swift in Sources */,
