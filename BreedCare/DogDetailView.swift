@@ -8,6 +8,11 @@ struct DogDetailView: View {
         careData[breed.name] // Assuming careData is accessible
     }
 
+    // Retrieve common dog names for the current breed
+    var commonNames: [String]? {
+        dogNamesData[breed.name] // Assuming dogNamesData is accessible
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
@@ -83,6 +88,32 @@ struct DogDetailView: View {
                     .padding(.horizontal)
                 } else {
                     Text("No care information available for this breed.")
+                        .foregroundColor(.secondary)
+                        .padding(.horizontal)
+                }
+
+                // Dog Names Section
+                if let names = commonNames, !names.isEmpty {
+                    VStack(alignment: .leading, spacing: 15) {
+                        Text("Dog Names by Dog Owners")
+                            .font(.headline)
+                            .padding(.bottom, 10)
+
+                        ForEach(names, id: \.self) { name in
+                            Text(name)
+                                .font(.body)
+                                .padding(5)
+                                .background(Color.orange.opacity(0.2))
+                                .cornerRadius(10)
+                        }
+                    }
+                    .padding(20)
+                    .background(Color.yellow.opacity(0.1))
+                    .cornerRadius(15)
+                    .shadow(color: .gray.opacity(0.2), radius: 5, x: 0, y: 3)
+                    .padding(.horizontal)
+                } else {
+                    Text("No common names available for this breed.")
                         .foregroundColor(.secondary)
                         .padding(.horizontal)
                 }
